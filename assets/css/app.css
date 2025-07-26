@@ -1,6 +1,13 @@
 :root {
-    --primary: #017db0;
-    --secondary: #52c2b8;
+    --light: aliceblue;
+    --primary: #0484ba;
+    --secondary: #0e6191;
+    --third: #022f61;
+    --shadow: #727272;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -46,19 +53,115 @@ nav a {
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #727272;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--shadow);
 }
 
 nav .active a,
 nav a:hover {
     background-color: var(--primary);
-    color: white;
+    color: var(--light);
 }
 
-#banner{
+#banner {
+    display: flex;
+    justify-content: center;
     background-image: url('../img/banner.jpg');
     background-position: center;
     background-size: cover;
     height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_headline h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--light);
+    font-size: 50px;
+    text-shadow: 0px 1px 0px var(--shadow);
+    max-width: 450px;
+}
+
+.banner_headline h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    color: var(--light);
+    font-size: 20px;
+    text-shadow: 0px 1px 0px var(--shadow);
+    max-width: 450px;
+    text-align: justify;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    padding: 20px;
+    flex: 1;
+    color: var(--light);
+}
+
+.banner1 {
+    background-color: var(--primary);
+}
+
+.banner2 {
+    background-color: var(--secondary);
+}
+
+.banner3 {
+    background-color: var(--third);
+}
+
+.option_title {
+    font-size: 20px;
+}
+
+.option_description {
+    font-size: 14px;
+    margin: 20px 0px;
+    text-align: justify;
+    max-height: 90%;
+}
+
+.option_description table {
+    display: flex;
+    width: 100%;
+}
+
+.option_description table tbody {
+    width: 100%;
+}
+
+.option_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--shadow);
+}
+
+.banner_options a {
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid var(--light);
+    color: var(--light);
+    font-size: 14px;
+    text-decoration: none;
 }
