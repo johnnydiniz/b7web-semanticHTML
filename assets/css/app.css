@@ -1,9 +1,10 @@
 :root {
-    --light: aliceblue;
     --primary: #0484ba;
     --secondary: #0e6191;
     --third: #022f61;
+    --light: aliceblue;
     --shadow: #727272;
+    --dark: #212121;
 }
 
 * {
@@ -164,4 +165,35 @@ nav a:hover {
     color: var(--light);
     font-size: 14px;
     text-decoration: none;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#content section {
+    flex: 2;
+}
+
+#content aside {
+    flex: 1;
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text {
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary);
+    margin-top: 10px;
 }
