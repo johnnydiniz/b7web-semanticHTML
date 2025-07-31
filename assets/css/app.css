@@ -198,6 +198,26 @@ nav a:hover {
     margin-top: 10px;
 }
 
+.widget_body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.widget_body .card {
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary);
+    color: var(--light);
+    text-align: center;
+    line-height: 150px;
+}
+
+.widget_body a {
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
