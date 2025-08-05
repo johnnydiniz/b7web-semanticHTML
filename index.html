@@ -5,6 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=0" />
     <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+    <script type="text/javascript">
+        window.onload = function () {
+            console.log('carrega')
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none'
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex'
+                }
+            })
+        }
+    </script>
     <title>VitalMed</title>
 </head>
 
@@ -203,12 +215,24 @@
                         <div class="widget_title_bar"></div>
                     </div>
                     <div class="widget_body">
-                        <a href=""><div class="card">Cardiology</div></a>
-                        <a href=""><div class="card">Pediatrics</div></a>
-                        <a href=""><div class="card">Dermatology</div></a>
-                        <a href=""><div class="card">Psychiatry</div></a>
-                        <a href=""><div class="card">Endocrinology</div></a>
-                        <a href=""><div class="card">See More</div></a>
+                        <a href="">
+                            <div class="card">Cardiology</div>
+                        </a>
+                        <a href="">
+                            <div class="card">Pediatrics</div>
+                        </a>
+                        <a href="">
+                            <div class="card">Dermatology</div>
+                        </a>
+                        <a href="">
+                            <div class="card">Psychiatry</div>
+                        </a>
+                        <a href="">
+                            <div class="card">Endocrinology</div>
+                        </a>
+                        <a href="">
+                            <div class="card">See More</div>
+                        </a>
                     </div>
                 </div>
                 <div class="widget">
